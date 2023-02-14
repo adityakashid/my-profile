@@ -4,52 +4,81 @@
         <title>Index </title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
         <style>
-            iframe{
-                background-color: rgb(221, 207, 157);
-            }
+           
              body{
                background-color: wheat;
              }
+             iframe{
+                background-color: rgb(220, 199, 126);
+            }
 
             #first1{
-                color: rgb(165, 183, 31);
-                background-color: rgb(24, 28, 8);
+                color: rgb(0, 0, 0);
+                background-color: rgb(240, 5, 21);
+                padding: 20px 30px;
+                border: 5px;
+                margin: 20px 50px;
+                border-radius: 20px;
+                border: solid;
+            }
+
+            .class1{
+                margin: 20px 50px;
+                padding-left: 20px;
+                padding-right: 80px;
                 
+            }
+            .class2{
+                padding: 20px 45px;
+                color: blanchedalmond;
+                background-color:black;
+                border-radius: 20px;
+                text-transform:capitalize;
+            }
+            /* For the image logo  */
+            .class3{
+                padding: 10px 20px;
+                background-color: black;
+                border-radius: 50px;
+                
+            }
+            span{
+                color: blue;
             }
         </style>
     </head>
     <body>
-        <header>
-            <i id="first1" class="fa-solid fa-user">&nbsp;&nbsp;<strong> Aditya Kashid </strong></i>&nbsp;&nbsp;&nbsp;&nbsp;
-            <i id="first1" class="fa-solid fa-phone">&nbsp;&nbsp;<strong> 4466 5546 88</strong></i>&nbsp;&nbsp;&nbsp;&nbsp;
-            <i id="first1" class="fa-regular fa-envelope">&nbsp;&nbsp;<strong> abc@gamail.com</strong></i>&nbsp;
+        <header class="class1">
+            <i id="first1" class="fa-solid fa-user">&nbsp;&nbsp;<strong> Aditya Kashid </strong></i>
+            <i id="first1" class="fa-solid fa-phone">&nbsp;&nbsp;<strong> 4466 5546 88</strong></i>
+            <i id="first1" class="fa-regular fa-envelope">&nbsp;&nbsp;<strong> abc@gamail.com</strong></i>
         </header>
         <br>
         <nav>
-        <a href="home.html" target="MY_Frame">HOME</a>&nbsp;&nbsp;
-        <a href="techStack.html" target="MY_Frame">TECH STACK</a>&nbsp;&nbsp;
-        <a href="education.html" target="MY_Frame">EDUCATION</a>&nbsp;&nbsp;
-        <a href="personalDetails.html" target="MY_Frame">PERSONAL DETAILS</a>&nbsp;&nbsp;
-        <a href="hobies.html" target="MY_Frame">HOBIES</a>&nbsp;&nbsp;
-        <a href="achivement.html" target="MY_Frame">ACHIVEMENT</a>&nbsp;&nbsp;
-        <a href="contactUs.html" target="MY_Frame">CONTACT US</a> 
+        <a class="class2" href="home.html" target="MY_Frame">HOME</a>
+        <a class="class2" href="techStack.html" target="MY_Frame">TECH STACK</a>
+        <a class="class2" href="education.html" target="MY_Frame">EDUCATION</a>
+        <a class="class2" href="personalDetails.html" target="MY_Frame">PERSONAL DETAILS</a>
+        <a class="class2" href="hobies.html" target="MY_Frame">HOBIES</a>
+        <a class="class2" href="achivement.html" target="MY_Frame">ACHIVEMENT</a>
+        <a class="class2" href="contactUs.html">CONTACT US</a> 
         </nav>
         <br>
         <hr>
         <br>
 
-        <iframe name="MY_Frame" width="650px" height="500px" src="home.html">
+        <iframe name="MY_Frame" width="1500px" height="400px" src="home.html">
 
         </iframe>
 
         <br>
-
-        <footer>
-            <strong>Follow Me: &nbsp;</strong>
-            <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram fa-2x"></i></a>
-            <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook fa-2x"></i></a>&nbsp;
-            <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin fa-2x"></i></a>&nbsp;
-            <a href="https://www.google.com/"><i class="fa-brands fa-google fa-2x"></i></a>
+         <!-- IN THIS I USED THE IN-LINE CSS ATTRUBUTE CALL STYLE   -->
+        <footer style="text-align: center;">
+            <strong><span>Follow Me:</span> &nbsp;</strong>
+            <a class="class3" href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram fa-2x"></i></a>
+            <a class="class3" href="https://www.facebook.com/"><i class="fa-brands fa-facebook fa-2x"></i></a>&nbsp;
+            <a class="class3" href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin fa-2x"></i></a>&nbsp;
+            <a class="class3" href="https://www.google.com/"><i class="fa-brands fa-google fa-2x"></i></a>
 
         </footer>
     </body>

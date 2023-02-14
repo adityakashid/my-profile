@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Student Rehistration</title>
+    <style>
+      body {
+        background-color: wheat;
+      }
+      h2{
+        color:rgb(186, 172, 46);
+        background-color: rgb(0, 0, 0);
+        border-radius: 20px;
+        text-align: center;
+        margin: 20px 580px;
+      }
+      fieldset{
+        background-color: rgb(182, 119, 9);
+      }
+      td{
+        color: rgb(0, 0, 0);
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Student Registration Form</h2>
+
+    <fieldset>
+      <legend><span><strong>Student Registration from</strong></span></legend>
+
+      <form>
+        <!-- <label> First Name</label>
+                <input type="text">
+                <br>
+                <label>Last Name</label>
+                <input type="text">
+                <br>
+                <label>Age</label>
+                <input type="number"> -->
+
+        <table>
+          <tbody>
+            <tr>
+              <td><label>First Name :</label></td>
+              <td>
+                <input
+                  type="text"
+                  maxlength="10"
+                  autofocus
+                  required
+                  placeholder="Enter your first name only 10 char"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td><label>Last name :</label></td>
+              <td>
+                <input
+                  type="text"
+                  maxlength="16"
+                  placeholder="Enter last name only"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td><label>Age :</label></td>
+              <td><input type="number" max="98" required /></td>
+            </tr>
+            <tr>
+              <td><label> Date of Birth :</label></td>
+              <td><input type="date" /></td>
+            </tr>
+            <tr>
+              <td><label> Email :</label></td>
+              <td><input type="email" /></td>
+            </tr>
+            <tr>
+              <td><label> Passward</label></td>
+              <td><input type="password" /></td>
+            </tr>
+            <tr>
+              <td><label>Select colour</label></td>
+              <td><input type="color" /></td>
+            </tr>
+
+            <tr>
+              <td><label> Country :</label></td>
+              <td><input type="text" value="INDIA" readonly /></td>
+            </tr>
+
+            <tr>
+              <td><label> Mobile Number :</label></td>
+              <td><input type="number" /></td>
+            </tr>
+            <tr>
+              <td><label>Select Degree :</label></td>
+              <td>
+                <select>
+                  <option>B-tech</option>
+                  <option>BCA</option>
+                  <option>MBA</option>
+                  <option>BSC</option>
+                  <option>B.Com</option>
+                  <option>BBA</option>
+                  <option>MCA</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td><label>Select Hobby :</label></td>
+              <td>
+                <input type="checkbox" /> <label> Reading </label>
+                <input type="checkbox" /> <label> Movies </label>
+                <input type="checkbox" /> <label> Dancing </label>
+                <input type="checkbox" /> <label> playing </label>
+              </td>
+            </tr>
+            <tr>
+              <td><label>Select gender :</label></td>
+              <td>
+                <input type="radio" name="gender" /> <label> Male</label>
+                <input type="radio" name="gender" /> <label>Female</label>
+                <input type="radio" name="gender" /> <label>Other</label>
+              </td>
+            </tr>
+            <tr>
+              <td><label>Uplode your photo :</label></td>
+              <td><input type="file" /></td>
+            </tr>
+            <tr>
+              <td><label>Uplode Marksheet :</label></td>
+              <td><input type="file" multiple /></td>
+            </tr>
+            <!-- this is yous to take more information so we get bigger text bar -->
+            <tr>
+              <td><label>Present Address :</label></td>
+              <td><textarea cols="50" rows="6"></textarea></td>
+            </tr>
+            <tr>
+              <td><button style="background-color: rgb(0, 250, 38);" type="submit"><b>Submit</b></button></td>
+              <td><button style="background-color: rgb(255, 0, 0);" type="reset">Reset</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </form>
+    </fieldset>
+  </body>
+</html>
