@@ -2,22 +2,52 @@
 <html>
   <head>
     <title>Student Rehistration</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
     <style>
       body {
-        background-color: wheat;
+        background-image: url(background.img.webp);
       }
-      h2{
-        color:rgb(186, 172, 46);
+      h2 {
+        color: rgb(186, 172, 46);
         background-color: rgb(0, 0, 0);
         border-radius: 20px;
         text-align: center;
         margin: 20px 580px;
       }
-      fieldset{
+      /* fieldset {
         background-color: rgb(182, 119, 9);
-      }
-      td{
+      } */
+      td {
+        
         color: rgb(0, 0, 0);
+      }
+      input[type="text"] {
+        color: rgb(0, 0, 255);
+        background-color: rgb(170, 223, 35);
+        padding: 10px 20px;
+        margin-bottom: 20px;
+        border: 2px solid black;
+      }
+      label{
+        /* font-family: 'Oswald', sans-serif; */
+        text-transform: uppercase;
+        margin-bottom: 30px;
+        /* padding: 20px 20px; */
+        border: 1px solid black;
+        padding-left: 30px;
+        border-radius: 20px;
+        background-color: rgb(255, 255, 255);
+        padding-right: 30px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+      }
+      .a1{
+        color: blue;
+        border-radius: 20px;
+        background-color: rgb(170, 223, 35);
+        border: 2px solid black;
       }
     </style>
   </head>
@@ -25,7 +55,9 @@
     <h2>Student Registration Form</h2>
 
     <fieldset>
-      <legend><span><strong>Student Registration from</strong></span></legend>
+      <legend>
+        <span><strong>Student Registration from</strong></span>
+      </legend>
 
       <form>
         <!-- <label> First Name</label>
@@ -63,38 +95,38 @@
             </tr>
             <tr>
               <td><label>Age :</label></td>
-              <td><input type="number" max="98" required /></td>
+              <td><input class="a1" type="number" max="98" required /></td>
             </tr>
             <tr>
-              <td><label> Date of Birth :</label></td>
-              <td><input type="date" /></td>
+              <td><label>Date of Birth :</label></td>
+              <td><input class="a1" type="date" /></td>
             </tr>
             <tr>
-              <td><label> Email :</label></td>
-              <td><input type="email" /></td>
+              <td><label>Email :</label></td>
+              <td><input class="a1" type="email" /></td>
             </tr>
             <tr>
-              <td><label> Passward</label></td>
-              <td><input type="password" /></td>
+              <td><label>Passward</label></td>
+              <td><input class="a1" type="password" /></td>
             </tr>
             <tr>
               <td><label>Select colour</label></td>
-              <td><input type="color" /></td>
+              <td><input class="a1" type="color" /></td>
             </tr>
 
             <tr>
-              <td><label> Country :</label></td>
+              <td><label>Country :</label></td>
               <td><input type="text" value="INDIA" readonly /></td>
             </tr>
 
             <tr>
-              <td><label> Mobile Number :</label></td>
-              <td><input type="number" /></td>
+              <td><label>Mobile Number :</label></td>
+              <td><input class="a1" type="number" /></td>
             </tr>
             <tr>
               <td><label>Select Degree :</label></td>
               <td>
-                <select>
+                <select class="a1">
                   <option>B-tech</option>
                   <option>BCA</option>
                   <option>MBA</option>
@@ -108,36 +140,54 @@
             <tr>
               <td><label>Select Hobby :</label></td>
               <td>
-                <input type="checkbox" /> <label> Reading </label>
-                <input type="checkbox" /> <label> Movies </label>
-                <input type="checkbox" /> <label> Dancing </label>
-                <input type="checkbox" /> <label> playing </label>
+                <input type="checkbox" />
+                <label class="a1">Reading</label>
+                <input type="checkbox" />
+                <label class="a1">Movies</label>
+                <input type="checkbox" />
+                <label class="a1">Dancing</label>
+                <input type="checkbox" />
+                <label class="a1">playing</label>
               </td>
             </tr>
             <tr>
               <td><label>Select gender :</label></td>
               <td>
-                <input type="radio" name="gender" /> <label> Male</label>
-                <input type="radio" name="gender" /> <label>Female</label>
-                <input type="radio" name="gender" /> <label>Other</label>
+                <input type="radio" name="gender" />
+                <label class="a1" >Male</label>
+                <input type="radio" name="gender" />
+                <label class="a1">Female</label>
+                <input type="radio" name="gender" />
+                <label class="a1">Other</label>
               </td>
             </tr>
             <tr>
               <td><label>Uplode your photo :</label></td>
-              <td><input type="file" /></td>
+              <td><input class="a1" type="file" /></td>
             </tr>
             <tr>
               <td><label>Uplode Marksheet :</label></td>
-              <td><input type="file" multiple /></td>
+              <td><input class="a1" type="file" multiple /></td>
             </tr>
             <!-- this is yous to take more information so we get bigger text bar -->
             <tr>
               <td><label>Present Address :</label></td>
-              <td><textarea cols="50" rows="6"></textarea></td>
+              <td><textarea class="a1" cols="50" rows="6"></textarea></td>
             </tr>
             <tr>
-              <td><button style="background-color: rgb(0, 250, 38);" type="submit"><b>Submit</b></button></td>
-              <td><button style="background-color: rgb(255, 0, 0);" type="reset">Reset</button></td>
+              <td>
+                <button 
+                  style="background-color: rgb(0, 250, 38);"
+                  type="submit"
+                >
+                  <b>Submit</b>
+                </button>
+              </td>
+              <td>
+                <button style="background-color: rgb(255, 0, 0);" type="reset">
+                  Reset
+                </button>
+              </td>
             </tr>
           </tbody>
         </table>
